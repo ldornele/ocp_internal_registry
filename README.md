@@ -9,7 +9,7 @@ OpenShift Container Platform can build images from your source code, deploy them
 ------------
 
 1. Login to OpenShift Cluster
-===========================
+
 
 ```
     oc login <openshift_cluster_url>
@@ -17,7 +17,6 @@ OpenShift Container Platform can build images from your source code, deploy them
 
 
 2. Get the Image Registry URL
-===========================
 
 To push and pull images, you'll need the URL of the OpenShift Image Registry. Run this command to get the registry URL:
 
@@ -28,7 +27,6 @@ To push and pull images, you'll need the URL of the OpenShift Image Registry. Ru
 The output will show the registry URL, usually in the format: default-route-openshift-image-registry.apps.<cluster_domain>
 
 3. Login to the Image Registry
-===========================
 
 Use podman to interact with the OpenShift Image Registry.
 
@@ -38,7 +36,6 @@ Use podman to interact with the OpenShift Image Registry.
 
 
 3. Tag and Push a Local Image
-===========================
 
 Once authenticated, you can tag a local image with the registry URL and push it to OpenShift:
 
@@ -60,7 +57,6 @@ Then, push the image to the registry:
 ``` 
 
 3. Use an Image from the Registry in a Deployment
-===========================
 
 To deploy an application using an image from the registry, you can reference the image in a deployment configuration:
 
