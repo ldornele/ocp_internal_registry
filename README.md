@@ -35,7 +35,7 @@ Use podman to interact with the OpenShift Image Registry.
 ```    
 
 
-3. Tag and Push a Local Image
+4. Tag and Push a Local Image
 
 Once authenticated, you can tag a local image with the registry URL and push it to OpenShift:
 
@@ -56,7 +56,7 @@ Then, push the image to the registry:
     e.g., podman push default-route-openshift-image-registry.apps.example.com/my-project/my-app-image:latest
 ``` 
 
-3. Use an Image from the Registry in a Deployment
+5. Use an Image from the Registry in a Deployment
 
 To deploy an application using an image from the registry, you can reference the image in a deployment configuration:
 
