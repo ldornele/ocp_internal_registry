@@ -78,11 +78,11 @@ To deploy an application using an image from the registry, you can reference the
         spec:
         containers:
         - name: my-app
-            image: <registry_url>/<project>/<image_name>:<tag>
+            image: image-registry.openshift-image-registry.svc:5000/<project>/<image_name>:<tag>
             ports:
             - containerPort: 8080
 ```
 ```
-    image: default-route-openshift-image-registry.apps.example.com/my-project/my-app-image:latest
+    image: image-registry.openshift-image-registry.svc:5000/my-project/my-app-image:latest
 ```
 
